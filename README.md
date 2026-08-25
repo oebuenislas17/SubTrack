@@ -45,3 +45,26 @@ SubTrack se enfocará en ayudar a los usuarios a organizar y controlar sus suscr
 
 SubTrack no tendrá acceso directo a cuentas bancarias ni realizará pagos porque esto aumentaría considerablemente la complejidad y los riesgos de seguridad del sistema. El objetivo principal del proyecto es ayudar al usuario a organizar y controlar sus suscripciones, no funcionar como una aplicación bancaria.
 
+## 4. Tipo de sistema y restricciones
+
+### Tipo de sistema y atributos de calidad
+
+| Aspecto | Definición para SubTrack |
+|---|---|
+| **Tipo de sistema** | PENDIENTE: seleccionar uno de los cinco tipos vistos en la semana 1. |
+| **Seguridad** | La información de cada usuario debe estar protegida y un usuario no debe poder consultar o modificar las suscripciones de otra persona. |
+| **Usabilidad** | Registrar y consultar una suscripción debe ser sencillo, ya que el sistema está pensado para usuarios con diferentes niveles de experiencia. |
+| **Confiabilidad** | Los costos, fechas de cobro y cálculos mostrados deben mantenerse correctamente para evitar información equivocada sobre los gastos del usuario. |
+| **Disponibilidad** | El usuario debe poder consultar sus suscripciones y próximos cobros cuando los necesite. |
+
+### Reglas de negocio
+
+| Regla | Descripción |
+|---|---|
+| **Suscripción válida** | Una suscripción debe tener como mínimo un nombre, costo, fecha de próximo cobro y frecuencia de pago. |
+| **Cancelación** | Cuando una suscripción sea marcada como cancelada, dejará de generar recordatorios de futuros cobros. |
+| **Historial** | Al cancelar una suscripción, su historial no será eliminado y podrá seguir siendo consultado. |
+| **Cambio de precio** | Si cambia el costo de una suscripción, los pagos anteriores conservarán el precio que tenían cuando fueron registrados. |
+| **Próximo cobro** | La fecha del próximo cobro se calculará de acuerdo con la frecuencia de pago registrada. |
+| **Permisos** | Un usuario solamente podrá modificar sus propias suscripciones. |
+
