@@ -47,24 +47,28 @@ SubTrack no tendrá acceso directo a cuentas bancarias ni realizará pagos porqu
 
 ## 4. Tipo de sistema y restricciones
 
-### Tipo de sistema y atributos de calidad
+### Tipo de sistema
 
-| Aspecto | Definición para SubTrack |
+SubTrack es un **Sistema de Información**, ya que su función principal es registrar, consultar, modificar y organizar información relacionada con las suscripciones de los usuarios, como costos, fechas de cobro, categorías e historial.
+
+### Atributos de calidad
+
+| Atributo | Aplicación en SubTrack |
 |---|---|
-| **Tipo de sistema** | PENDIENTE: seleccionar uno de los cinco tipos vistos en la semana 1. |
-| **Seguridad** | La información de cada usuario debe estar protegida y un usuario no debe poder consultar o modificar las suscripciones de otra persona. |
-| **Usabilidad** | Registrar y consultar una suscripción debe ser sencillo, ya que el sistema está pensado para usuarios con diferentes niveles de experiencia. |
-| **Confiabilidad** | Los costos, fechas de cobro y cálculos mostrados deben mantenerse correctamente para evitar información equivocada sobre los gastos del usuario. |
-| **Disponibilidad** | El usuario debe poder consultar sus suscripciones y próximos cobros cuando los necesite. |
+| **Usabilidad** | SubTrack debe ser fácil de entender y utilizar para registrar y consultar suscripciones. |
+| **Integridad de los datos** | Los costos, fechas, estados e historial de las suscripciones deben mantenerse correctos y consistentes. |
+| **Trazabilidad** | El sistema debe conservar información relevante sobre cambios, como modificaciones de precios y cancelaciones. |
+| **Control de acceso** | Cada usuario podrá acceder y modificar únicamente sus propias suscripciones, mientras que el administrador tendrá permisos para gestionar información general. |
 
 ### Reglas de negocio
 
 | Regla | Descripción |
 |---|---|
-| **Suscripción válida** | Una suscripción debe tener como mínimo un nombre, costo, fecha de próximo cobro y frecuencia de pago. |
-| **Cancelación** | Cuando una suscripción sea marcada como cancelada, dejará de generar recordatorios de futuros cobros. |
-| **Historial** | Al cancelar una suscripción, su historial no será eliminado y podrá seguir siendo consultado. |
-| **Cambio de precio** | Si cambia el costo de una suscripción, los pagos anteriores conservarán el precio que tenían cuando fueron registrados. |
-| **Próximo cobro** | La fecha del próximo cobro se calculará de acuerdo con la frecuencia de pago registrada. |
-| **Permisos** | Un usuario solamente podrá modificar sus propias suscripciones. |
+| **Suscripción válida** | Una suscripción debe tener nombre, costo, fecha de próximo cobro y frecuencia de pago. |
+| **Cancelación** | Una suscripción cancelada dejará de generar recordatorios de futuros cobros. |
+| **Historial** | Al cancelar una suscripción, su historial se conservará. |
+| **Cambio de precio** | Si cambia el precio de una suscripción, los registros anteriores conservarán su precio original. |
+| **Próximo cobro** | La fecha del próximo cobro se determinará de acuerdo con la frecuencia de pago registrada. |
+| **Acceso** | Un usuario solamente podrá consultar y modificar sus propias suscripciones. |
+
 
