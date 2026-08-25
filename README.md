@@ -27,20 +27,21 @@ Sin SubTrack, las personas tienen que revisar sus estados de cuenta, consultar c
 **Decisión de diseño:** cada usuario podrá modificar libremente sus propias suscripciones, pero solo el administrador podrá modificar la información general de servicios y categorías.
 ## 3. Alcance
 
-SubTrack permitirá a los usuarios registrar y administrar sus suscripciones en un solo lugar, consultar sus próximos cobros y conocer cuánto dinero destinan a estos servicios.
+SubTrack se enfocará en ayudar a los usuarios a organizar y controlar sus suscripciones, sus fechas de cobro y el dinero que destinan a ellas. El sistema funcionará como una herramienta de seguimiento y organización, por lo que no realizará operaciones directamente con bancos o proveedores externos.
 
-Para mantener el proyecto dentro de un alcance realista, se establece lo siguiente:
-
-| Sí incluye | No incluye |
+| Sí incluye | Queda fuera |
 |---|---|
 | Registro e inicio de sesión de usuarios. | Realizar pagos desde SubTrack. |
 | Registrar suscripciones. | Cancelar directamente una suscripción con el proveedor. |
 | Modificar y marcar suscripciones como canceladas. | Acceder a cuentas bancarias de los usuarios. |
 | Registrar costo, fecha y frecuencia de pago. | Detectar automáticamente cargos bancarios. |
 | Clasificar suscripciones por categorías. | Modificar cuentas de servicios externos. |
-| Mostrar próximos cobros. | Controlar los precios establecidos por servicios externos. |
-| Generar recordatorios de próximos pagos. | Contratar nuevas suscripciones desde SubTrack. |
-| Consultar el historial de suscripciones. | Administrar métodos de pago reales. |
-| Calcular el gasto total en suscripciones. | Realizar reembolsos de suscripciones. |
-| Administrar servicios y categorías. | Garantizar la disponibilidad de servicios externos. |
+| Mostrar los próximos cobros. | Contratar nuevas suscripciones desde SubTrack. |
+| Generar recordatorios de próximos cobros. | Administrar métodos de pago reales. |
+| Consultar el historial de suscripciones. | Realizar reembolsos. |
+| Calcular el gasto total en suscripciones. | Garantizar los precios de servicios externos. |
+
+### Razón de una exclusión
+
+SubTrack no tendrá acceso directo a cuentas bancarias ni realizará pagos porque esto aumentaría considerablemente la complejidad y los riesgos de seguridad del sistema. El objetivo principal del proyecto es ayudar al usuario a organizar y controlar sus suscripciones, no funcionar como una aplicación bancaria.
 
