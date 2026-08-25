@@ -4,37 +4,27 @@
 
 SubTrack es un sistema que ayuda a las personas a controlar sus suscripciones, conocer cuánto gastan y recordar las fechas de sus próximos cobros.
 
-## Problemática
+## 2. Problema y usuarios
 
-Actualmente las personas utilizan diferentes servicios de suscripción como plataformas de streaming, música, videojuegos, almacenamiento en la nube y otras aplicaciones.
+Actualmente, las personas pueden tener varias suscripciones contratadas al mismo tiempo y perder fácilmente el control de cuánto están gastando, cuándo se realizará cada cobro o incluso olvidar que siguen pagando por un servicio que ya no utilizan.
 
-Al tener varias suscripciones, puede ser difícil recordar cuánto se paga por cada una, cuándo se realizará el próximo cobro y cuáles servicios se siguen utilizando.
+Sin SubTrack, las personas tienen que revisar sus estados de cuenta, consultar cada servicio por separado, utilizar recordatorios en su celular o simplemente tratar de recordar las fechas de sus pagos. Esto puede provocar cobros inesperados y gastos en servicios que ya no utilizan.
 
-Esto puede provocar gastos innecesarios o cobros inesperados.
+### Usuarios del sistema
 
-## Usuarios
+| Tipo de usuario | ¿Quién es? | ¿Qué necesita? |
+|---|---|---|
+| **Usuario** | Persona que tiene una o varias suscripciones. | Registrar sus suscripciones, consultar cuánto gasta, conocer sus próximas fechas de cobro y recibir recordatorios. |
+| **Administrador** | Persona encargada de mantener organizada la información general de SubTrack. | Administrar los servicios y categorías, mantener la información actualizada y evitar datos incorrectos o duplicados. |
 
-### Usuario
+### Necesidades en conflicto
 
-El usuario podrá:
+| Usuario | Necesidad |
+|---|---|
+| **Usuario** | Quiere tener libertad para registrar y modificar la información de sus suscripciones. |
+| **Administrador** | Necesita mantener controlada y organizada la información general para evitar datos incorrectos o duplicados. |
 
-- Registrar sus suscripciones.
-- Consultar cuánto gasta.
-- Consultar sus próximas fechas de cobro.
-- Recibir recordatorios.
-- Modificar sus suscripciones.
-- Marcar suscripciones como canceladas.
-- Consultar su historial.
-
-### Administrador
-
-El administrador podrá:
-
-- Administrar los servicios disponibles.
-- Administrar categorías.
-- Mantener actualizada la información general del sistema.
-- Supervisar el funcionamiento del sistema.
-
+**Decisión de diseño:** cada usuario podrá modificar libremente sus propias suscripciones, pero solo el administrador podrá modificar la información general de servicios y categorías.
 ## 3. Alcance
 
 SubTrack permitirá a los usuarios registrar y administrar sus suscripciones en un solo lugar, consultar sus próximos cobros y conocer cuánto dinero destinan a estos servicios.
