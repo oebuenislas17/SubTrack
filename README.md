@@ -12,10 +12,6 @@ Al tener varias suscripciones, puede ser difícil recordar cuánto se paga por c
 
 Esto puede provocar gastos innecesarios o cobros inesperados.
 
-## Objetivo
-
-Desarrollar un sistema que permita a los usuarios registrar y organizar sus suscripciones para tener un mejor control de sus gastos y fechas de pago.
-
 ## Usuarios
 
 ### Usuario
@@ -39,15 +35,4 @@ El administrador podrá:
 - Mantener actualizada la información general del sistema.
 - Supervisar el funcionamiento del sistema.
 
-## Reglas de negocio
 
-- Una suscripción debe tener un costo y una fecha de cobro.
-- Una suscripción cancelada debe conservar su historial.
-- Las suscripciones canceladas no deben generar nuevos recordatorios.
-- Si cambia el precio de una suscripción, los pagos anteriores deben conservar su precio original.
-
-## Alcance
-
-SubTrack permitirá administrar y dar seguimiento a las suscripciones del usuario.
-
-El sistema no realizará pagos reales ni cancelará directamente servicios externos.
