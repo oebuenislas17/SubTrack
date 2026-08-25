@@ -4,7 +4,7 @@
 
 SubTrack es un sistema que ayuda a las personas a controlar sus suscripciones, conocer cuánto gastan y recordar las fechas de sus próximos cobros.
 
-## 2. Problema y usuarios
+## Problema y usuarios
 
 Actualmente, las personas pueden tener varias suscripciones contratadas al mismo tiempo y perder fácilmente el control de cuánto están gastando, cuándo se realizará cada cobro o incluso olvidar que siguen pagando por un servicio que ya no utilizan.
 
@@ -25,7 +25,7 @@ Sin SubTrack, las personas tienen que revisar sus estados de cuenta, consultar c
 | **Administrador** | Necesita mantener controlada y organizada la información general para evitar datos incorrectos o duplicados. |
 
 **Decisión de diseño:** cada usuario podrá modificar libremente sus propias suscripciones, pero solo el administrador podrá modificar la información general de servicios y categorías.
-## 3. Alcance
+## Alcance
 
 SubTrack se enfocará en ayudar a los usuarios a organizar y controlar sus suscripciones, sus fechas de cobro y el dinero que destinan a ellas. El sistema funcionará como una herramienta de seguimiento y organización, por lo que no realizará operaciones directamente con bancos o proveedores externos.
 
@@ -45,7 +45,7 @@ SubTrack se enfocará en ayudar a los usuarios a organizar y controlar sus suscr
 
 SubTrack no tendrá acceso directo a cuentas bancarias ni realizará pagos porque esto aumentaría considerablemente la complejidad y los riesgos de seguridad del sistema. El objetivo principal del proyecto es ayudar al usuario a organizar y controlar sus suscripciones, no funcionar como una aplicación bancaria.
 
-## 4. Tipo de sistema y restricciones
+## Tipo de sistema y restricciones
 
 ### Tipo de sistema
 
