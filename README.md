@@ -73,29 +73,37 @@ SubTrack es un **Sistema de Información**, ya que su función principal es regi
 
 ## 5. Ciclo de vida
 
-### Modelo seleccionado: Ágil
+### Modelo seleccionado: Cascada
 
-Para el desarrollo de SubTrack se utilizará un **modelo Ágil**, ya que los requisitos pueden cambiar conforme el sistema sea desarrollado y probado por los usuarios.
+Para el desarrollo de SubTrack se utilizará el **modelo Cascada**, ya que el proyecto cuenta con un alcance definido y los requisitos principales pueden establecerse antes de comenzar el desarrollo.
 
-Este modelo permitirá desarrollar SubTrack en pequeñas etapas, obtener retroalimentación, detectar problemas y realizar cambios sin tener que esperar hasta que todo el sistema esté terminado.
-
-Además, las funciones podrán desarrollarse progresivamente, comenzando con las más importantes, como el registro de usuarios y suscripciones, para después incorporar el control de gastos, recordatorios e historial.
+Este modelo permitirá trabajar de manera ordenada y secuencial, completando cada etapa antes de continuar con la siguiente. Primero se definirán los requisitos del sistema, después se realizará el diseño, posteriormente el desarrollo y las pruebas, hasta llegar a la entrega del producto final.
 
 ### ¿Por qué le conviene a SubTrack?
 
 | Criterio | SubTrack |
 |---|---|
-| **Requisitos** | Pueden cambiar conforme se pruebe el sistema y aparezcan nuevas necesidades. |
-| **Usuario/cliente** | Puede participar durante el desarrollo y dar retroalimentación sobre las funciones. |
-| **Riesgo** | El principal riesgo es crear funciones que no sean útiles o fáciles de utilizar para el usuario. |
-| **Evolución** | El sistema puede mejorar y agregar funciones según la experiencia y necesidades de los usuarios. |
+| **Requisitos** | Los requisitos principales pueden definirse y documentarse antes de comenzar el desarrollo. |
+| **Alcance** | El sistema tiene un alcance delimitado, enfocado en el registro y control de suscripciones. |
+| **Riesgo** | El proyecto presenta un riesgo técnico relativamente bajo y utiliza funciones conocidas. |
+| **Organización** | Permite avanzar de forma ordenada, terminando y documentando cada etapa antes de pasar a la siguiente. |
+
+### Etapas del desarrollo
+
+| Etapa | Aplicación en SubTrack |
+|---|---|
+| **1. Requisitos** | Definir las necesidades de los usuarios, requisitos funcionales, no funcionales y reglas de negocio. |
+| **2. Diseño** | Diseñar la estructura del sistema, interfaces y base de datos. |
+| **3. Implementación** | Desarrollar las funciones definidas para SubTrack. |
+| **4. Pruebas** | Verificar que cada requisito se cumpla y corregir los errores encontrados. |
+| **5. Entrega y mantenimiento** | Entregar el sistema terminado y realizar correcciones necesarias posteriormente. |
 
 ### Alternativas descartadas
 
 | Modelo | Razón para descartarlo |
 |---|---|
-| **Cascada** | Funciona mejor cuando los requisitos son estables y conocidos desde el principio. En SubTrack pueden aparecer cambios conforme los usuarios prueben el sistema. |
-| **Modelo V** | Está orientado principalmente a sistemas críticos o regulados que necesitan una verificación formal. SubTrack no es un sistema crítico y utilizar este modelo agregaría procesos que no son necesarios para el alcance del proyecto. |
+| **Ágil** | Está orientado a proyectos con requisitos cambiantes y retroalimentación continua. En SubTrack se busca definir previamente el alcance y los requisitos principales antes de comenzar el desarrollo. |
+| **Prototipado** | Es más conveniente cuando los requisitos son difíciles de definir y es necesario experimentar constantemente con la interfaz. En SubTrack las funciones principales y el alcance pueden establecerse desde las primeras etapas. |
 
 ## 6. Requisitos
 
