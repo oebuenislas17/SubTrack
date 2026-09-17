@@ -97,13 +97,25 @@ Además, las funciones podrán desarrollarse progresivamente, comenzando con las
 | **Cascada** | Funciona mejor cuando los requisitos son estables y conocidos desde el principio. En SubTrack pueden aparecer cambios conforme los usuarios prueben el sistema. |
 | **Modelo V** | Está orientado principalmente a sistemas críticos o regulados que necesitan una verificación formal. SubTrack no es un sistema crítico y utilizar este modelo agregaría procesos que no son necesarios para el alcance del proyecto. |
 
-## 6.Requerimientos
-## Requisitos funcionales
+## 6. Requisitos
+
+### Requisitos funcionales
 
 | ID | Requisito |
 |---|---|
-| **RF-01** | El sistema permitirá al usuario registrar una suscripción indicando el nombre del servicio, costo, frecuencia de pago y fecha del próximo cobro. |
-| **RF-02** | El sistema generará un recordatorio para cada suscripción activa antes de la fecha del próximo cobro, de acuerdo con el periodo de anticipación configurado por el usuario. |
-| **RF-03** | El sistema calculará y mostrará el gasto mensual total del usuario utilizando las suscripciones activas registradas y su frecuencia de pago. |
+| **RF-01** | El sistema permitirá al usuario registrar una suscripción indicando nombre del servicio, costo, frecuencia de pago y fecha del próximo cobro. |
+| **RF-02** | El sistema generará un recordatorio para cada suscripción activa antes de la fecha del próximo cobro, según el periodo de anticipación configurado por el usuario. |
+| **RF-03** | El sistema calculará y mostrará el gasto mensual total del usuario a partir de sus suscripciones activas y su frecuencia de pago. |
+| **RF-04** | El sistema permitirá al usuario marcar una suscripción activa como cancelada. |
+| **RF-05** | El sistema conservará el historial de una suscripción después de que sea marcada como cancelada. |
+
+### Requisitos no funcionales
+
+| ID | Atributo | Requisito |
+|---|---|---|
+| **RNF-01** | Control de acceso | El sistema deberá impedir que un usuario consulte o modifique suscripciones pertenecientes a otro usuario. |
+| **RNF-02** | Usabilidad | El usuario deberá poder registrar una suscripción completando como máximo cuatro campos obligatorios. |
+| **RNF-03** | Integridad de datos | El sistema deberá rechazar el registro de una suscripción cuando el costo ingresado sea menor o igual a cero. |
+
 
 
