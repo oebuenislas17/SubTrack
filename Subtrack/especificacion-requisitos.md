@@ -9,10 +9,13 @@
 
 ------------------------------------------------------------------------
 
-**Sistema:**\
-**Autor:**\
-**Versión:**\
-**Fecha de la última actualización:**
+# Especificación de requisitos
+
+**Sistema:** SubTrack  
+**Autor:** Omar Enrique Buenrostro Islas  
+**Versión:** 1.0  
+**Fecha de la última actualización:** 28 de septiembre de 2026
+
 
 ------------------------------------------------------------------------
 
