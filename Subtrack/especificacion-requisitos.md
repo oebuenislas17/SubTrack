@@ -1,12 +1,3 @@
-# Especificación de requisitos
-
-> **Plantilla del curso · Ingeniería de Software I · SIS3407**\
-> Copia este archivo a tu repositorio como
-> `docs/especificacion-requisitos.md`, borra las instrucciones en
-> cursiva y los ejemplos, y escribe tu contenido. Las reglas de
-> nomenclatura y redacción están en la **Guía de redacción de
-> requisitos**. Se entrega en la semana 8 junto con el prototipo.
-
 ------------------------------------------------------------------------
 
 # Especificación de requisitos
