@@ -146,6 +146,7 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 |---|---|---|---|---|
 | **RNF-USA-001** | Usabilidad | Registro sencillo de suscripciones | Importante | Tipo de sistema / Entrevista |
 | **RNF-INT-001** | Integridad de los datos | Validación de datos de suscripción | Imprescindible | Tipo de sistema / Entrevista |
+| **RNF-INT-002** | Integridad de los datos | Validación del costo | Imprescindible | Entrevista 22/09/2026 |
 | **RNF-TRZ-001** | Trazabilidad | Registro correcto del estado de suscripción | Importante | Tipo de sistema |
 | **RNF-ACC-001** | Control de acceso | Separación de información por usuario | Imprescindible | Tipo de sistema |
 
@@ -167,18 +168,29 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 
 ### Integridad de los datos
 
-#### RNF-INT-001 · Validación de datos de suscripción
+#### RNF-INT-001 · Validación de datos obligatorios
 
 | Campo | Contenido |
 |---|---|
 | **Atributo de calidad** | Integridad de los datos |
-| **Descripción** | El sistema rechazará el registro de una suscripción si falta alguno de los cuatro datos obligatorios o si el costo ingresado es menor o igual a cero. |
-| **Métrica** | 100% de los intentos de registro con campos obligatorios vacíos o costo menor o igual a cero deberán ser rechazados. |
-| **Origen** | Derivado del atributo de integridad de datos y de los supuestos confirmados en la entrevista del 22/09/2026. |
+| **Descripción** | El sistema rechazará el registro de una suscripción si falta alguno de los cuatro datos obligatorios. |
+| **Métrica** | 100% de los intentos de registro con al menos un campo obligatorio vacío deberán ser rechazados. |
+| **Origen** | Derivado del atributo de integridad de los datos y de la entrevista del 22/09/2026. |
 | **Prioridad** | Imprescindible |
-| **Por qué importa** | Los cálculos de gastos y los recordatorios dependen de que la información registrada sea completa y válida. |
+| **Por qué importa** | Los cálculos de gastos y recordatorios dependen de que la información necesaria esté completa. |
 | **Afecta a** | RF-001, RF-002, RF-003, RF-005 |
 
+#### RNF-INT-002 · Validación del costo
+
+| Campo | Contenido |
+|---|---|
+| **Atributo de calidad** | Integridad de los datos |
+| **Descripción** | El sistema rechazará el registro de una suscripción cuyo costo sea menor o igual a cero. |
+| **Métrica** | 100% de los intentos de registro con costo menor o igual a cero deberán ser rechazados. |
+| **Origen** | Entrevista con usuario, 22/09/2026. |
+| **Prioridad** | Imprescindible |
+| **Por qué importa** | La entrevista confirmó que las suscripciones registradas deben tener un costo mayor a cero. |
+| **Afecta a** | RF-001, RF-003, RF-005 |
 ### Trazabilidad
 
 #### RNF-TRZ-001 · Registro correcto del estado de suscripción
@@ -214,14 +226,11 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | ID | Caso de uso | Actor | Requisitos relacionados |
 |---|---|---|---|
 | **CU-01** | Registrar una suscripción | Usuario | RF-001 |
-| **CU-02** | Actualizar una suscripción | Usuario | Por especificar |
 | **CU-03** | Consultar sus suscripciones | Usuario | RF-001, RF-004 |
 | **CU-04** | Cancelar el seguimiento de una suscripción | Usuario | RF-004 |
 | **CU-05** | Consultar los próximos cobros | Usuario | RF-002 |
 | **CU-06** | Consultar sus gastos en suscripciones | Usuario | RF-003, RF-005 |
 | **CU-07** | Programar recordatorios de cobro | Usuario | RF-002 |
-| **CU-08** | Administrar los servicios disponibles | Administrador | Por especificar |
-| **CU-09** | Administrar las categorías de servicios | Administrador | Por especificar |
 
 ------------------------------------------------------------------------
 
@@ -236,6 +245,7 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | **RF-005** | Entrevista 22/09/2026 | CU-06 Consultar sus gastos en suscripciones | Resumen de gasto anual |
 | **RNF-USA-001** | Tipo de sistema / Entrevista | CU-01 | Formulario de registro |
 | **RNF-INT-001** | Tipo de sistema / Entrevista | CU-01 | Validación del formulario |
+| **RNF-INT-002** | Entrevista 22/09/2026 | CU-01 Registrar una suscripción | Validación del costo |
 | **RNF-TRZ-001** | Tipo de sistema | CU-04 | Estado de suscripción |
 | **RNF-ACC-001** | Tipo de sistema | CU-01, CU-03, CU-04, CU-05, CU-06, CU-07 | Control de acceso del usuario |
 
