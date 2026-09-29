@@ -10,31 +10,65 @@
 
 ------------------------------------------------------------------------
 
-## 1. Propósito y alcance
-
-*Para qué existe este documento y a quién va dirigido. El alcance se
-retoma de la Visión del producto, no se reinventa. Si cambió, corrígelo
-también allá.*
-
 **Propósito del documento:**
+
+Este documento define los requisitos funcionales y no funcionales de SubTrack. Su propósito es establecer de manera clara y verificable las funciones, restricciones y atributos de calidad que deberá cumplir el sistema durante su desarrollo.
 
 **Alcance del sistema:**
 
+SubTrack permitirá a los usuarios registrar y administrar sus suscripciones en un solo lugar. El sistema permitirá consultar próximos cobros, conocer los gastos relacionados con suscripciones y generar recordatorios.
+
+El sistema incluirá:
+
+- Registro y administración de suscripciones.
+- Registro de costo, frecuencia de pago y fecha del próximo cobro.
+- Consulta de próximos cobros.
+- Cálculo del gasto total mensual y anual en suscripciones.
+- Recordatorios configurables de próximos cobros.
+- Administración de servicios y categorías.
+- Control de acceso a la información de cada usuario.
+
 **Fuera del alcance:**
+
+- Realizar pagos desde SubTrack.
+- Cancelar directamente una suscripción con un proveedor externo.
+- Acceder a cuentas bancarias del usuario.
+- Detectar automáticamente cargos bancarios.
+- Contratar servicios externos desde SubTrack.
+- Realizar reembolsos.
+- Administrar métodos de pago reales.
+- Conservar suscripciones canceladas dentro del historial de suscripciones activas.
+
+El acceso a cuentas bancarias y la realización de pagos quedan fuera del alcance porque SubTrack tiene como objetivo organizar y dar seguimiento a las suscripciones, no funcionar como una aplicación bancaria.
+
+
 
 ------------------------------------------------------------------------
 
 ## 2. Usuarios y su contexto
 
-*Se enriquece con lo que salga de la entrevista de elicitación. Si algo
-cambió respecto a la Visión del producto, anótalo.*
+| Usuario | Qué hace hoy sin el sistema | Qué espera del sistema |
+|---|---|---|
+| **Usuario** | Revisa diferentes aplicaciones, correos o movimientos de su tarjeta para conocer cuánto está gastando y cuándo será el siguiente cobro. | Tener sus suscripciones organizadas en un solo lugar, consultar sus próximos cobros, elegir cuándo recibir recordatorios y conocer su gasto total mensual y anual. |
+| **Administrador** | La información general de servicios y categorías debe mantenerse organizada por separado. | Mantener organizada y actualizada la información general utilizada por SubTrack. |
 
-  Usuario   Qué hace hoy sin el sistema   Qué espera del sistema
-  --------- ----------------------------- ------------------------
-                                          
-                                          
+### Contexto identificado durante la entrevista
 
-**Conflictos identificados entre usuarios:**
+La entrevista permitió confirmar que el usuario necesita controlar sus suscripciones sin tener que consultar diferentes aplicaciones, correos o movimientos bancarios.
+
+También se confirmó que el usuario quiere elegir con cuánta anticipación recibir un recordatorio y considera suficientes el nombre, costo, frecuencia y próximo cobro para registrar una suscripción.
+
+Durante la entrevista se identificó que el usuario no desea conservar las suscripciones canceladas en el historial porque podrían confundirse con las suscripciones que siguen activas.
+
+Además, surgió la necesidad de mostrar cuánto dinero se gastó en total durante el mes y contemplar también el gasto anual.
+
+### Conflictos identificados entre usuarios
+
+El usuario necesita libertad para registrar y modificar sus propias suscripciones, mientras que el administrador necesita mantener controlada y organizada la información general del sistema.
+
+Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y el administrador tendrá permisos para gestionar la información general de servicios y categorías.
+
+
 
 ------------------------------------------------------------------------
 
