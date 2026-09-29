@@ -261,6 +261,17 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | 22/09/2026 | RF-003 | Se especificó la consulta del gasto total mensual. | Necesidad identificada durante la entrevista. |
 | 22/09/2026 | RF-005 | Se agregó la consulta del gasto total anual. | Necesidad identificada durante la entrevista. |
 | 29/09/2026 | Documento completo | Se actualizó la especificación a la versión 1.1. | Incorporación de los resultados de la entrevista de elicitación. |
+
+### Revisión de la dupla
+
+**Revisor:** [JIMENA]  
+**Fecha de revisión:** 29/09/2026
+
+**Observaciones realizadas:**
+- Se detectó que RF-003 no especificaba con suficiente claridad cómo se consideran las suscripciones anuales al calcular el gasto mensual.
+
+**Cambios realizados después de la revisión:**
+- Se aclaró el criterio de aceptación de RF-003 para definir cómo se consideran las suscripciones según su frecuencia de pago.
                                    
 
 ------------------------------------------------------------------------
