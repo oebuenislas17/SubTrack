@@ -289,16 +289,38 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | 29/09/2026 | Documento completo | Se actualizó la especificación a la versión 1.1. | Incorporación de los resultados de la entrevista de elicitación. |
 | 30/09/2026 | RF-007, RF-008 | Se agregaron los requisitos de administración de servicios y categorías. | Estas funciones ya estaban definidas dentro del alcance del sistema y se incorporaron para mantener correspondencia con los casos de uso. |
 
+---
+
+## 8. Prototipo navegable
+
+El prototipo navegable de SubTrack fue desarrollado en Figma e incluye las pantallas y la navegación correspondientes a los principales flujos del sistema.
+
+**Enlace al prototipo:** [Ver prototipo navegable de SubTrack en Figma](https://www.figma.com/make/3pXSZCHhvvWHup3UA8eiXU/Navegable-prototype-and-video?t=UhDVLvTh5g1zfE0C-1)
+
 ### Revisión de la dupla
 
-**Revisor:** [JIMENA]  
+**Revisor:** Jimena  
 **Fecha de revisión:** 29/09/2026
+
+**Elementos revisados:**
+- Requisitos funcionales y no funcionales de SubTrack.
+- Correspondencia entre los requisitos funcionales y los casos de uso.
+- Diagrama de casos de uso.
+- Prototipo navegable desarrollado en Figma.
+- Video de demostración y recorrido del prototipo.
 
 **Observaciones realizadas:**
 - Se detectó que RF-003 no especificaba con suficiente claridad cómo se consideran las suscripciones anuales al calcular el gasto mensual.
+- Se revisó que los casos de uso representados en el diagrama correspondieran con los requisitos funcionales definidos en el documento.
+- Se comprobó que el prototipo permitiera recorrer el proceso de registro de una suscripción de principio a fin.
+- Se verificó que el prototipo contemplara un flujo alterno cuando el usuario intenta registrar una suscripción con información inválida o incompleta.
+- Durante la revisión del video se comprobó que el recorrido mostrara las principales funciones de SubTrack y que la navegación entre las pantallas fuera comprensible.
 
 **Cambios realizados después de la revisión:**
 - Se aclaró el criterio de aceptación de RF-003 para definir cómo se consideran las suscripciones según su frecuencia de pago.
+- Se ajustó la correspondencia entre los casos de uso y los requisitos funcionales.
+- Se revisaron las conexiones entre las pantallas del prototipo para representar correctamente el escenario principal y el flujo alterno.
+- Se verificó que el video mostrara el funcionamiento del prototipo y explicara las principales funciones del sistema.
                                    
 
 ------------------------------------------------------------------------
