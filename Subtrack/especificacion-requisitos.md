@@ -83,6 +83,8 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | **RF-003** | Consultar gasto mensual | Imprescindible | Entrevista 22/09/2026 |
 | **RF-004** | Cancelar el seguimiento de una suscripción | Imprescindible | Visión del producto / Entrevista 22/09/2026 |
 | **RF-005** | Consultar gasto anual | Importante | Entrevista 22/09/2026 |
+| **RF-007** | Administrar los servicios disponibles | Importante | Alcance del sistema |
+| **RF-008** | Administrar las categorías de servicios | Importante | Alcance del sistema |
 
 ### 3.2 Fichas
 
@@ -134,7 +136,27 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | **Origen** | Necesidad identificada durante la entrevista con usuario, 22/09/2026. |
 | **Prioridad** | Importante |
 | **Criterio de aceptación** | Al consultar un año, el sistema muestra el total correspondiente a los gastos de suscripciones registrados durante ese periodo. |
-| **Relacionado con** | RF-001, RF-003, RNF-INT-001 |         
+| **Relacionado con** | RF-001, RF-003, RNF-INT-001 |
+
+#### RF-007 · Administrar los servicios disponibles
+
+| Campo | Contenido |
+|---|---|
+| **Descripción** | El sistema permitirá al administrador gestionar los servicios disponibles en SubTrack. |
+| **Origen** | Alcance del sistema. |
+| **Prioridad** | Importante |
+| **Criterio de aceptación** | El administrador puede agregar, modificar y eliminar servicios disponibles, y los cambios realizados se reflejan en la información general utilizada por SubTrack. |
+| **Relacionado con** | RNF-ACC-001 |
+
+#### RF-008 · Administrar las categorías de servicios
+
+| Campo | Contenido |
+|---|---|
+| **Descripción** | El sistema permitirá al administrador gestionar las categorías utilizadas para organizar los servicios disponibles en SubTrack. |
+| **Origen** | Alcance del sistema. |
+| **Prioridad** | Importante |
+| **Criterio de aceptación** | El administrador puede agregar, modificar y eliminar categorías de servicios, y los cambios realizados quedan disponibles para organizar los servicios en SubTrack. |
+| **Relacionado con** | RNF-ACC-001 |
 
 ------------------------------------------------------------------------
 
@@ -231,6 +253,8 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | **CU-05** | Consultar los próximos cobros | Usuario | RF-002 |
 | **CU-06** | Consultar sus gastos en suscripciones | Usuario | RF-003, RF-005 |
 | **CU-07** | Programar recordatorios de cobro | Usuario | RF-002 |
+| **CU-08** | Administrar los servicios disponibles | Administrador | RF-007 |
+| **CU-09** | Administrar las categorías de servicios | Administrador | RF-008 |
 
 ------------------------------------------------------------------------
 
@@ -243,6 +267,8 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | **RF-003** | Entrevista 22/09/2026 | CU-06 Consultar sus gastos en suscripciones | Resumen de gasto mensual |
 | **RF-004** | Visión del producto / Entrevista 22/09/2026 | CU-04 Cancelar el seguimiento de una suscripción | Detalle de suscripción |
 | **RF-005** | Entrevista 22/09/2026 | CU-06 Consultar sus gastos en suscripciones | Resumen de gasto anual |
+| **RF-007** | Alcance del sistema | CU-08 Administrar los servicios disponibles | Administración de servicios |
+| **RF-008** | Alcance del sistema | CU-09 Administrar las categorías de servicios | Administración de categorías |
 | **RNF-USA-001** | Tipo de sistema / Entrevista | CU-01 | Formulario de registro |
 | **RNF-INT-001** | Tipo de sistema / Entrevista | CU-01 | Validación del formulario |
 | **RNF-INT-002** | Entrevista 22/09/2026 | CU-01 Registrar una suscripción | Validación del costo |
@@ -261,6 +287,7 @@ Por esta razón, cada usuario tendrá control sobre sus propias suscripciones y 
 | 22/09/2026 | RF-003 | Se especificó la consulta del gasto total mensual. | Necesidad identificada durante la entrevista. |
 | 22/09/2026 | RF-005 | Se agregó la consulta del gasto total anual. | Necesidad identificada durante la entrevista. |
 | 29/09/2026 | Documento completo | Se actualizó la especificación a la versión 1.1. | Incorporación de los resultados de la entrevista de elicitación. |
+| 30/09/2026 | RF-007, RF-008 | Se agregaron los requisitos de administración de servicios y categorías. | Estas funciones ya estaban definidas dentro del alcance del sistema y se incorporaron para mantener correspondencia con los casos de uso. |
 
 ### Revisión de la dupla
 
