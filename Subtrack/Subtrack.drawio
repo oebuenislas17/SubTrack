@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="f6ivqWhejZgUvrU3mLQp">
+    <mxGraphModel dx="2020" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gqvakCPEVjrpFhplPbCl-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=86;height=30;" value="SubTrack" vertex="1">
+          <mxGeometry height="510" width="1500" x="180" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="560" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registar una suscripcion" vertex="1">
+          <mxGeometry height="70" width="140" x="1370" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Administrar los servicios disponibles" vertex="1">
+          <mxGeometry height="90" width="140" x="200" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Us&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;uario&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="1170" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar Suscripciones" vertex="1">
+          <mxGeometry height="70" width="140" x="880" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Cancelar el seguimiento de una suscripcion" vertex="1">
+          <mxGeometry height="70" width="140" x="940" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar proximos cobros" vertex="1">
+          <mxGeometry height="70" width="140" x="1530" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar sus gastos en suscripciones" vertex="1">
+          <mxGeometry height="70" width="140" x="1190" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Programar recordatorios de cobro" vertex="1">
+          <mxGeometry height="70" width="140" x="700" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="gqvakCPEVjrpFhplPbCl-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Administrar las categorias de servicios" vertex="1">
+          <mxGeometry height="100" width="140" x="274" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Acceder al sistema&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="610" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-5" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-7" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="jellw08YbjSvtvO56Pm3-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="800" y="640" as="sourcePoint" />
+            <mxPoint x="850" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-6" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-3" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="jellw08YbjSvtvO56Pm3-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="800" y="640" as="sourcePoint" />
+            <mxPoint x="850" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-9" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-11" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="gqvakCPEVjrpFhplPbCl-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="750" y="610" as="sourcePoint" />
+            <mxPoint x="1130" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-12" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-15" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="750" y="640" as="sourcePoint" />
+            <mxPoint x="910" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar gasto mensual" vertex="1">
+          <mxGeometry height="70" width="140" x="1090" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="consultar gasto anual" vertex="1">
+          <mxGeometry height="70" width="140" x="1380" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-19" edge="1" parent="1" source="jellw08YbjSvtvO56Pm3-17" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-13" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="790" y="500" as="sourcePoint" />
+            <mxPoint x="950" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-20" edge="1" parent="1" source="jellw08YbjSvtvO56Pm3-18" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-13" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="790" y="500" as="sourcePoint" />
+            <mxPoint x="950" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=45;" value="&amp;lt;&amp;lt;EXTEND&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1350" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-60;" value="&amp;lt;&amp;lt;EXTEND&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1140" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-75;" value="&amp;lt;&amp;lt;EXTEND&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="920" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-45;" value="&amp;lt;&amp;lt;EXTEND&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="790" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-26" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-10" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="gqvakCPEVjrpFhplPbCl-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="660" as="sourcePoint" />
+            <mxPoint x="900" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-27" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-7" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="gqvakCPEVjrpFhplPbCl-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="660" as="sourcePoint" />
+            <mxPoint x="900" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-28" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-4" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1470" y="700" as="sourcePoint" />
+            <mxPoint x="1520" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-29" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-7" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="gqvakCPEVjrpFhplPbCl-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1470" y="600" as="sourcePoint" />
+            <mxPoint x="1520" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-30" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-6" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="600" as="sourcePoint" />
+            <mxPoint x="610" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-31" edge="1" parent="1" source="gqvakCPEVjrpFhplPbCl-16" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="gqvakCPEVjrpFhplPbCl-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="600" as="sourcePoint" />
+            <mxPoint x="610" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;h3&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Detalle del caso de uso: Registrar una suscripción&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Actor:&lt;/strong&gt; Usuario&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Objetivo:&lt;/strong&gt; Registrar una nueva suscripción para llevar el control de su costo y próximo cobro.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Precondición:&lt;/strong&gt; El usuario debe haber accedido al sistema.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font size=&quot;3&quot;&gt;Escenario principal:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol start=&quot;1&quot;&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario selecciona la opción para registrar una suscripción.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema muestra los campos de registro.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario ingresa el nombre del servicio.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario ingresa el costo de la suscripción.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario selecciona la frecuencia de pago.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario ingresa la fecha del próximo cobro.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario confirma el registro.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema valida la información.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema registra la suscripción.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema muestra la suscripción registrada.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;&lt;font size=&quot;3&quot;&gt;Flujo alterno 1 — Datos incompletos:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;Si falta alguno de los campos obligatorios, el sistema no registra la suscripción.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema indica que deben completarse los datos faltantes.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario puede completar la información y volver a confirmar.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;&lt;font size=&quot;3&quot;&gt;Flujo alterno 2 — Costo no válido:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;Si el costo ingresado es igual o menor a cero, el sistema no registra la suscripción.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El sistema solicita ingresar un costo mayor a cero.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;El usuario corrige el costo y vuelve a confirmar.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Postcondición:&lt;/strong&gt; La suscripción queda registrada y disponible para ser consultada por el usuario.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Requisito funcional relacionado:&lt;/strong&gt; RF-001 — Registrar una suscripción.&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="420" width="670" x="1680" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="jellw08YbjSvtvO56Pm3-36" edge="1" parent="1" source="jellw08YbjSvtvO56Pm3-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="jellw08YbjSvtvO56Pm3-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
