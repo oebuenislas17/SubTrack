@@ -110,4 +110,7 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 | **Interfaz Strategy** | Definir el comportamiento variable según la frecuencia de cobro. |
 | **Estrategias mensual y anual** | Implementar las dos frecuencias definidas para SubTrack. |
 | **Base de Datos** | Conservar la información compartida con separación lógica por usuario. |
+## Imagen de Mermaid
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/0ae8b813-819b-497e-b0b6-ac357cf4198a" />
+
 
