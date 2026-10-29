@@ -98,4 +98,16 @@ flowchart TB
     class RN notificacion
     class DB datos
 ```
+Descripción
+Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiza sus responsabilidades en cuatro módulos internos. La Base de Datos permanece fuera de la aplicación como el otro contenedor ya mostrado.
+
+| Elemento | Responsabilidad |
+|---|---|
+| **Suscripciones** | Registrar, consultar y modificar suscripciones; registrar cancelaciones y conservar los historiales de suscripciones y precios. |
+| **Cobros** | Consultar los gastos asociados a las suscripciones; no ejecutar pagos ni cobrar dinero. |
+| **Próximos cobros** | Gestionar las fechas de cobro y renovación según la frecuencia y el estado de la suscripción. |
+| **Recordatorios** | Recibir avisos internos, gestionar notificaciones y detener los recordatorios de suscripciones canceladas. |
+| **Interfaz Strategy** | Definir el comportamiento variable según la frecuencia de cobro. |
+| **Estrategias mensual y anual** | Implementar las dos frecuencias definidas para SubTrack. |
+| **Base de Datos** | Conservar la información compartida con separación lógica por usuario. |
 
