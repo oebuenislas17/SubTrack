@@ -1,3 +1,6 @@
+## Diagrama 1 — Contexto
+
+```mermaid
 flowchart LR
     %% Diagrama 1 — Contexto
     U["Usuario de SubTrack"]
@@ -10,3 +13,4 @@ flowchart LR
     classDef sistema fill:#f0fdfa,stroke:#2dd4bf
     class U persona
     class S sistema
+```
