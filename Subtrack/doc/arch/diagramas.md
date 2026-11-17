@@ -117,6 +117,5 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 ## Diagrama UML — Clases
 ![Diagrama de clases](./doc/arch/diagrama-clases.png)
 
-## Diagrama de secuencia
-
-![Diagrama de secuencia](./diagrama%20de%20secuencias.png)
+## Diagrama UML — Secuencia
+![Diagrama de secuencia](./doc/arch/diagrama%20de%20secuencias.png)
