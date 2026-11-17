@@ -122,3 +122,15 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 
 ## Diagrama UML — Actividad
 ![Diagrama de actividad](./doc/arch/Diagrama%20actividad.png)
+
+## Qué faltaba?
+
+Faltaba representar la validación de los datos de una suscripción antes de guardarla. En el diagrama de clases no aparece una operación específica para realizar esa validación.
+
+## ¿Cómo lo descubrimos?
+
+Al elaborar el flujo de registro, identificamos que antes de guardar una suscripción es necesario comprobar que los campos obligatorios estén completos y que el costo sea mayor que cero.
+
+## ¿Qué proponemos?
+
+Agregar la operación `validarDatos()` a la clase `Suscripcion`.
