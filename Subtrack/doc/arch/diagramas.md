@@ -121,4 +121,4 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 ![Diagrama de secuencia](./doc/arch/diagrama%20de%20secuencias.png)
 
 ## Diagrama UML — Actividad
-![Diagrama de actividad](./doc/arch/diagrama%20de%20actividad.png)
+![Diagrama de actividad](./doc/arch/Diagrama%20actividad.png)
