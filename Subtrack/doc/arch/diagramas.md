@@ -50,6 +50,37 @@ Diagrama 2 — Contenedores. SubTrack contiene exactamente dos contenedores: la 
 - Base de Datos: conserva la información de los usuarios en un modelo compartido, con separación lógica por usuario, incluidos los historiales de suscripciones y precios.
 - Límite SubTrack: agrupa los dos contenedores del sistema.
 - Comunicación: el usuario opera mediante la aplicación y esta accede a los datos correspondientes. No se especifican protocolos ni tecnologías.
+
+## Diagrama 2 — Contenedores
+
+```mermaid
+flowchart TD
+    usuario([Usuario de SubTrack])
+
+    subgraph sistema["SubTrack — Sistema SaaS"]
+        app["Aplicación SubTrack<br/>Contenedor: monolito modular<br/>Tecnología propuesta: Node.js + Express<br/>Contiene las reglas de negocio y los módulos"]
+
+        db[("Base de Datos<br/>Contenedor de persistencia compartida<br/>Tecnología propuesta: PostgreSQL<br/>Datos separados por usuario<br/>Historial de suscripciones y precios")]
+
+        app -->|"SQL: lectura y escritura de datos"| db
+    end
+
+    usuario -->|"HTTPS: solicitudes a la aplicación"| app
+    app -->|"HTTPS: resultados y recordatorios"| usuario
+```
+
+**Descripción**
+
+SubTrack contiene exactamente dos contenedores: la Aplicación SubTrack y la Base de Datos. Los módulos internos permanecen dentro de la aplicación y no se despliegan como servicios independientes.
+
+- **Usuario:** se comunica con la aplicación mediante HTTPS y no accede directamente a la base de datos.
+- **Aplicación SubTrack:** es una única unidad desplegable con arquitectura de monolito modular. La tecnología propuesta es Node.js con Express y contiene las reglas de negocio y los módulos del sistema.
+- **Base de Datos:** utiliza PostgreSQL como tecnología propuesta. Conserva la información compartida con separación lógica por usuario, incluidos los historiales de suscripciones y precios.
+- **Límite SubTrack:** agrupa los dos contenedores del sistema.
+- **Comunicación:** el usuario envía solicitudes mediante HTTPS y recibe resultados y recordatorios. La aplicación lee y escribe información en PostgreSQL mediante SQL.
+
+*Nota: Node.js, Express y PostgreSQL son tecnologías propuestas para una futura implementación de SubTrack; actualmente se cuenta con un prototipo navegable.*
+
 ## Diagrama 3 — Componentes
 
 ```mermaid
