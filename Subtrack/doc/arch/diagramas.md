@@ -117,3 +117,6 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 ## Diagrama UML — Clases
 ![Diagrama de clases](./doc/arch/diagrama-clases.png)
 
+## Diagrama de secuencias
+<img width="800" alt="Diagrama de secuencia SubTrack" src="PEGA_AQUI_LA_URL_DE_LA_IMAGEN" />
+
