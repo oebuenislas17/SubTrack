@@ -117,8 +117,63 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 ## Diagrama UML — Clases
 ![Diagrama de clases](./doc/arch/diagrama-clases.png)
 
+### Codigo
+classDiagram
+    class Usuario {
+        +registrarSuscripcion()
+        +consultarSuscripciones()
+        +consultarGastos()
+    }
+
+    class Suscripcion {
+        -nombreServicio: String
+        -costo: Decimal
+        -frecuenciaPago: FrecuenciaPago
+        -fechaProximoCobro: Date
+        -estado: EstadoSuscripcion
+        +actualizarDatos()
+        +cancelarSeguimiento()
+        +calcularProximoCobro()
+    }
+
+    class Recordatorio {
+        -anticipacion: Integer
+        -fechaRecordatorio: Date
+        +programar()
+        +actualizar()
+    }
+
+    class FrecuenciaPago {
+        <<enumeration>>
+        MENSUAL
+        ANUAL
+    }
+
+    class EstadoSuscripcion {
+        <<enumeration>>
+        ACTIVA
+        CANCELADA
+    }
+
+    Usuario "1" --> "0..*" Suscripcion : administra
+    Suscripcion "1" --> "0..*" Recordatorio : genera
+    Suscripcion ..> FrecuenciaPago : utiliza
+    Suscripcion ..> EstadoSuscripcion : utiliza
+
 ## Diagrama UML — Secuencia
 ![Diagrama de secuencia](./doc/arch/diagrama%20de%20secuencias.png)
+
+### Codigo
+sequenceDiagram
+    participant Usuario
+    participant Suscripcion
+    participant Recordatorio
+
+    Usuario->>Usuario: registrarSuscripcion()
+    Usuario->>Suscripcion: actualizarDatos()
+    Usuario->>Suscripcion: calcularProximoCobro()
+    Usuario->>Recordatorio: programar()
+    Recordatorio-->>Usuario: Confirmación
 
 ## Diagrama UML — Actividad
 ![Diagrama de actividad](./doc/arch/Diagrama%20actividad.png)
