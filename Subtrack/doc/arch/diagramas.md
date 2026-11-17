@@ -119,4 +119,4 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 
 ## Diagrama de secuencia
 
-![Diagrama de secuencia SubTrack](./diagrama%20de%20secuencias.png)
+![Diagrama de secuencia](./diagrama%20de%20secuencias.png)
