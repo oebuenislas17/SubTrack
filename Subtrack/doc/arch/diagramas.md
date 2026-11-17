@@ -123,6 +123,20 @@ Diagrama 3 — Componentes. Amplía el contenedor Aplicación SubTrack y organiz
 ## Diagrama UML — Actividad
 ![Diagrama de actividad](./doc/arch/Diagrama%20actividad.png)
 
+### Codigo
+flowchart TD
+    A([Inicio]) --> B[Ingresar datos de la suscripción]
+    B --> C[Validar campos obligatorios y costo mayor a cero]
+    C --> D{¿Datos válidos?}
+    D -- No --> E[Mostrar mensaje de error]
+    E --> B
+    D -- Sí --> F[Usuario: registrarSuscripcion]
+    F --> G[Suscripcion: actualizarDatos]
+    G --> H[Suscripcion: calcularProximoCobro]
+    H --> I[Recordatorio: programar]
+    I --> J[Mostrar confirmación]
+    J --> K([Fin])
+
 ## Qué faltaba?
 
 Faltaba representar la validación de los datos de una suscripción antes de guardarla. En el diagrama de clases no aparece una operación específica para realizar esa validación.
