@@ -203,3 +203,28 @@ Al elaborar el flujo de registro, identificamos que antes de guardar una suscrip
 ## ¿Qué proponemos?
 
 Agregar la operación `validarDatos()` a la clase `Suscripcion`.
+
+## Análisis de impacto — Cambio solicitado
+
+### Cambio solicitado
+Se solicita que las suscripciones canceladas no aparezcan en el historial visible del usuario.
+
+### Elementos afectados
+- **Requisitos:** RF-004, relacionado con cancelar el seguimiento de una suscripción.
+- **Diagrama de clases:** La clase `Suscripcion` ya cuenta con el atributo `estado`, que permite identificar si está ACTIVA o CANCELADA.
+- **Módulo de suscripciones:** Se deberá agregar un filtro para mostrar únicamente las suscripciones activas.
+- **Interfaz:** Se deberá actualizar el listado para ocultar las suscripciones canceladas.
+- **Pruebas:** Verificar que las suscripciones activas aparezcan y las canceladas no.
+
+### Esfuerzo estimado
+3.5 horas:
+- Análisis del cambio: 30 minutos.
+- Ajuste de la lógica de filtrado: 1 hora.
+- Ajuste de la pantalla o prototipo: 1 hora.
+- Pruebas: 1 hora.
+
+### Decisión
+Se acepta el cambio porque es una modificación acotada y responde a la necesidad expresada por la usuaria durante la entrevista.
+
+### Nota
+Este análisis describe los cambios necesarios; no significa que ya estén implementados.
